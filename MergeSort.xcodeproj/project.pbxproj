@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		61176F5B2514FDDA0086209F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176F5A2514FDDA0086209F /* main.swift */; };
+		61176F99251500B40086209F /* SourceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176F7E2514FEF50086209F /* SourceGenerator.swift */; };
+		61176F9A251500B40086209F /* MergeSortParallelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176F842514FFB70086209F /* MergeSortParallelTests.swift */; };
+		61176F9B251500B40086209F /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176F682514FE7B0086209F /* MergeSortTests.swift */; };
+		61176FA62515017D0086209F /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176F652514FE3A0086209F /* MergeSort.swift */; };
+		61176FA72515017D0086209F /* MergeSortParallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176F622514FDEC0086209F /* MergeSortParallel.swift */; };
+		61176FAD251501E70086209F /* NativeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176FAC251501E70086209F /* NativeSortTests.swift */; };
+		61176FBD251503080086209F /* MergeSortOneArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176FBC251503080086209F /* MergeSortOneArrayTests.swift */; };
+		61176FC1251503150086209F /* MergeSortOneArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61176FC0251503150086209F /* MergeSortOneArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +33,27 @@
 /* Begin PBXFileReference section */
 		61176F572514FDDA0086209F /* MergeSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MergeSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		61176F5A2514FDDA0086209F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		61176F622514FDEC0086209F /* MergeSortParallel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortParallel.swift; sourceTree = "<group>"; };
+		61176F652514FE3A0086209F /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		61176F682514FE7B0086209F /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
+		61176F7E2514FEF50086209F /* SourceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceGenerator.swift; sourceTree = "<group>"; };
+		61176F842514FFB70086209F /* MergeSortParallelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortParallelTests.swift; sourceTree = "<group>"; };
+		61176F8F251500AB0086209F /* MergeSortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergeSortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61176F93251500AB0086209F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61176FAC251501E70086209F /* NativeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeSortTests.swift; sourceTree = "<group>"; };
+		61176FBC251503080086209F /* MergeSortOneArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortOneArrayTests.swift; sourceTree = "<group>"; };
+		61176FC0251503150086209F /* MergeSortOneArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortOneArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		61176F542514FDDA0086209F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61176F8C251500AB0086209F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				61176F592514FDDA0086209F /* MergeSort */,
+				61176F90251500AB0086209F /* MergeSortTests */,
 				61176F582514FDDA0086209F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				61176F572514FDDA0086209F /* MergeSort */,
+				61176F8F251500AB0086209F /* MergeSortTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +87,38 @@
 				61176F5A2514FDDA0086209F /* main.swift */,
 			);
 			path = MergeSort;
+			sourceTree = "<group>";
+		};
+		61176F90251500AB0086209F /* MergeSortTests */ = {
+			isa = PBXGroup;
+			children = (
+				61176FB5251502460086209F /* Source */,
+				61176FB42515023C0086209F /* Tests */,
+				61176F93251500AB0086209F /* Info.plist */,
+			);
+			path = MergeSortTests;
+			sourceTree = "<group>";
+		};
+		61176FB42515023C0086209F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				61176FAC251501E70086209F /* NativeSortTests.swift */,
+				61176F682514FE7B0086209F /* MergeSortTests.swift */,
+				61176F842514FFB70086209F /* MergeSortParallelTests.swift */,
+				61176FBC251503080086209F /* MergeSortOneArrayTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		61176FB5251502460086209F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				61176F7E2514FEF50086209F /* SourceGenerator.swift */,
+				61176F622514FDEC0086209F /* MergeSortParallel.swift */,
+				61176F652514FE3A0086209F /* MergeSort.swift */,
+				61176FC0251503150086209F /* MergeSortOneArray.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +141,23 @@
 			productReference = 61176F572514FDDA0086209F /* MergeSort */;
 			productType = "com.apple.product-type.tool";
 		};
+		61176F8E251500AB0086209F /* MergeSortTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61176F94251500AB0086209F /* Build configuration list for PBXNativeTarget "MergeSortTests" */;
+			buildPhases = (
+				61176F8B251500AB0086209F /* Sources */,
+				61176F8C251500AB0086209F /* Frameworks */,
+				61176F8D251500AB0086209F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MergeSortTests;
+			productName = MergeSortTests;
+			productReference = 61176F8F251500AB0086209F /* MergeSortTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +168,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					61176F562514FDDA0086209F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					61176F8E251500AB0086209F = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -110,9 +189,20 @@
 			projectRoot = "";
 			targets = (
 				61176F562514FDDA0086209F /* MergeSort */,
+				61176F8E251500AB0086209F /* MergeSortTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61176F8D251500AB0086209F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61176F532514FDDA0086209F /* Sources */ = {
@@ -120,6 +210,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				61176F5B2514FDDA0086209F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61176F8B251500AB0086209F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61176FA72515017D0086209F /* MergeSortParallel.swift in Sources */,
+				61176F99251500B40086209F /* SourceGenerator.swift in Sources */,
+				61176F9A251500B40086209F /* MergeSortParallelTests.swift in Sources */,
+				61176FC1251503150086209F /* MergeSortOneArray.swift in Sources */,
+				61176F9B251500B40086209F /* MergeSortTests.swift in Sources */,
+				61176FAD251501E70086209F /* NativeSortTests.swift in Sources */,
+				61176FBD251503080086209F /* MergeSortOneArrayTests.swift in Sources */,
+				61176FA62515017D0086209F /* MergeSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +368,42 @@
 			};
 			name = Release;
 		};
+		61176F95251500AB0086209F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C36U578Q4C;
+				INFOPLIST_FILE = MergeSortTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.MergeSortTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		61176F96251500AB0086209F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C36U578Q4C;
+				INFOPLIST_FILE = MergeSortTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.MergeSortTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +421,15 @@
 			buildConfigurations = (
 				61176F5F2514FDDA0086209F /* Debug */,
 				61176F602514FDDA0086209F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61176F94251500AB0086209F /* Build configuration list for PBXNativeTarget "MergeSortTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61176F95251500AB0086209F /* Debug */,
+				61176F96251500AB0086209F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
